@@ -1,0 +1,25 @@
+.movie__wrap {
+    height:100%;
+}
+.movie{
+    max-width:960px;
+    margin:0  auto;
+    padding:20px;
+    display:flex;
+    background-color: rgb(221, 190, 190);
+}
+
+.movie__img{
+    min-width:33.333%
+}
+.info__wrap{
+    width:66.666%;
+    padding: 20px;
+    color:rgb(235, 235, 236);
+}
+.movie__title{
+    margin-bottom:14px;
+}
+.movie__overview{
+    line-height:1.4
+}

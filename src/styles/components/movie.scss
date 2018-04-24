@@ -1,0 +1,145 @@
+@import '../base/settings.scss';
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+
+.movie__wrap {
+    padding-top:9rem;
+}
+ 
+.movie {
+    max-width:960px;
+    margin:0  auto;
+    padding:20px;
+    display:flex;
+    background-color: #fff;
+    font-size:$m-size;
+    font-family:'Istok Web';
+    align-items:flex-start;
+}
+
+.movie__img {
+    max-width:400px;
+    flex-shrink:0;
+    flex-grow:0;
+}
+
+.info__wrap {
+    padding: 20px;
+    color:$off-black;
+    flex-shrink:1;
+    flex-grow:1
+}
+.movie__title {
+    margin-bottom:14px;
+    font-weight:600;
+    font-family:'Montserrat';
+    color:$dark-blue;
+}
+
+.movie__overview {
+    line-height:1.6;
+    font-size:$ml-size;
+    font-weight:500;
+}
+
+.movie__genres {
+    margin-right:10px;
+    font-size:$m-size;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.genre__average__wrapper {
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    margin:20px 0;
+}
+.movie__genres__wrapper {
+    list-style:none;
+    display:flex;
+    margin-bottom:0;
+    margin:10px 0 10px 20px ;
+    font-weight:600;
+    color:$off-black;
+}
+.movie__average {
+    display: inline-block;
+    border:3px $purpleLighten solid;
+    text-align:center;
+    height:45px;
+    width:45px;
+    line-height:40px;
+    border-radius:50%;
+    font-size:$m-size;
+    font-weight:600;
+    color: $off-black;
+}
+.movie__released {
+    margin-bottom:10px;
+}
+.btn__trailer {
+    display:inline-block;
+    border-radius:4px;
+    font-size:$ml-size;
+    font-weight:600;
+    border:2px solid $purple;
+    padding:10px;
+    color:$off-black;
+    background-color: #fff;
+    margin-top:25px;
+}
+
+.btn__trailer:hover {
+    background-color: $purple;
+    cursor:pointer;
+    color:#fff;
+}
+.loading__movie {
+    height:100%;
+    margin-top:16rem;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:$l-size;
+    font-family:'Montserrat';
+}
+
+
+.average__wrapper span:first-child {
+    font-size:1.7rem;
+    font-family: 'Montserrat';
+    margin-right:10px;
+}
+
+@media (max-width:940px) and (min-width:710px) {
+    .movie__title{
+        font-size:2.6rem;
+    }
+    .main-movies{
+        width:600px;
+    }
+    .film-wrapper img {
+        width:200px;
+    }
+    .movie__overview{
+        font-size:1.6rem;
+    }
+    .movie__genres__wrapper {
+        margin-left:0
+    }
+}
+
+@media (max-width:710px) {
+    
+    .movie{
+        flex-direction:column;
+    }
+    .movie__img {
+        max-width:100%;
+    }
+    .movie__genres__wrapper {
+        margin-left:20px
+    }
+    
+}

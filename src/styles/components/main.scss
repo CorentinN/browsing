@@ -1,0 +1,128 @@
+@import '../base/settings.scss';
+.movies__wrapper {
+    padding-top: 12rem;
+}
+
+.main-movies {
+    width:1200px;
+    margin:0 auto;
+}
+
+.main-movies > h2 {
+    font-size:$ml-size;
+}
+
+.main-movies ul {
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+.film-wrapper {
+    list-style:none;
+    display:flex;
+    position:relative;
+}
+
+.film-wrapper a {
+    display:inline-block;
+    height:100%;
+}
+
+.film-wrapper img {
+    width:100%;
+    height:100%;
+    margin:0;
+    display:block;
+}
+
+
+.film-wrapper:hover a:before {
+    content: "";
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    cursor:pointer;
+    position:absolute;
+    background-color: rgba(75, 62, 92, 0.445);
+}
+.film-wrapper:hover a:after {
+    content: "\f06e";
+    color:#fff;
+    font-family: "FontAwesome";
+    font-size:7rem;
+    position:absolute;
+    top:calc(50% - 3rem);
+    left:calc(50% - 3.5rem);
+}
+
+.film-wrapper img a {
+    display:block;
+    width:100%;
+    height:100%;
+    margin:0;
+}
+
+.loadmore-wrapper {
+    width:100%;
+    height:150px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-load-more {
+    border:1px solid $purple;
+    border-radius : 2px;
+    height:40px;
+    padding:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Montserrat';
+    font-weight:600;
+    font-size:$m-size;
+
+}
+
+.btn-load-more:hover {
+    cursor:pointer;
+    background-color: $purple;
+    color:#fff;
+}
+
+@media (max-width:1250px) {
+    .main-movies{
+        width:900px;
+    }
+}
+
+@media (max-width:940px) {
+    .main-movies{
+        width:600px;
+    }
+    .film-wrapper img {
+        width:200px;
+    }
+}
+
+@media (max-width:640px) {
+    .main-movies{
+        width:400px;
+    }
+    .film-wrapper img {
+        width:200px;
+    }
+}
+
+@media (max-width:450px) {
+    .movies__wrapper{
+        padding-top:14rem;
+    }
+    .main-movies{
+        width:300px;
+    }
+    .film-wrapper img {
+        width:300px;
+    }
+}
